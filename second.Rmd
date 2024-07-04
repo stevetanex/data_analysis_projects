@@ -1,0 +1,28 @@
+---
+title: "mine"
+author: "steve tanex"
+date: "`r Sys.Date()`"
+output: github_document
+---
+
+## setting up my first enviornment
+notes: sometimes there will be some error
+```{r}
+library(ggplot2)
+
+library(palmerpenguins)
+
+data(penguins)
+
+
+```
+## visual
+#### this ti the visualion I made
+```{r}
+ggplot(data = penguins) +
+
+  geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
+```
+
+
+
